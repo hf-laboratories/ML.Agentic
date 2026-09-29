@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HFLabs.ML.Agentic.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HFLabs.ML.Agentic.Tests.csproj" />
+  </Folder>
+</Solution>

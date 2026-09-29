@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>HFLabs.ML.Agentic</AssemblyName>
+    <RootNamespace>HFLabs.ML.Agentic</RootNamespace>
+    <PackageId>HFLabs.ML.Agentic</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>HF Laboratories</Authors>
+    <Company>HF Laboratories</Company>
+    <Copyright>Copyright (c) 2025-2026 HF Laboratories</Copyright>
+    <Description>Zero-dependency, in-memory building blocks for agentic systems on .NET 10. Includes all 21 core agentic patterns (Blackboard, MCTS, Multi-Persona Debate, Reflection, Verification, DAG Executor, Guardrails) and native wire models for Model Context Protocol (MCP 2025-06-18), Agent-to-Agent (A2A v0.2.5), and JSON-RPC 2.0.</Description>
+    <PackageTags>agentic;agents;mcp;a2a;jsonrpc;blackboard;mcts;debate;reflection;guardrails;dotnet;csharp</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/hf-laboratories/ML.Agentic</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hf-laboratories/ML.Agentic</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <!-- NuGet package content files -->
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\README.md')" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" Condition="Exists('..\LICENSE')" />
+  </ItemGroup>
+
+  <!--
+    Deliberately dependency-free: no ProjectReference and no PackageReference.
+  -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="HFLabs.ML.Agentic.Tests" />
+    <InternalsVisibleTo Include="ML.Agentic.Tests" />
+  </ItemGroup>
+</Project>

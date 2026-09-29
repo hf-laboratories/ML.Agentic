@@ -1,0 +1,10 @@
+## .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
+nupkgs/
+TestResults/
