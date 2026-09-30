@@ -97,3 +97,12 @@ dotnet test src/HFLabs/Libraries/ML/ML.Agentic/tests/ML.Agentic.Tests.csproj
 
 * **License:** Licensed under the **Apache-2.0** Open Source License.
 * **Zero Dependency Guarantee:** Does not take dependencies on external cloud SDKs or heavy frameworks. Fits seamlessly into ASP.NET Core, WPF, MAUI, or console daemon services.
+
+## Trademarks and non-affiliation
+
+Product and company names in this repository belong to their owners and are used only to say what this project works with. HF Laboratories is not affiliated with, endorsed by, or sponsored by any of them.
+
+- Microsoft, .NET, NuGet are trademarks or registered trademarks of Microsoft Corporation.
+- FastMCP, Model Context Protocol (MCP) are names of third-party open-source projects and belong to their maintainers.
+
+See [hflabs.dev/legal/trademarks](https://hflabs.dev/legal/trademarks) for the full list.
